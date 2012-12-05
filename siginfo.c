@@ -83,6 +83,7 @@
 #else
 # define SIGINFO_REGFORMAT "%x"
 # define SIGINFO_STACK_GENERIC
+# define UINT_PTR_TYPE unsigned int
 #endif
 
 struct si_code_descriptor
