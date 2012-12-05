@@ -63,7 +63,7 @@
 #if defined(__powerpc64__)
 # define SIGINFO_REGISTER(ucontext, index) ((ucontext)->uc_mcontext.gp_regs[index])
 #elif defined(__powerpc__)
-# define SIGINFO_REGISTER(ucontext, index) ((ucontext)->uc_mcontext.uc_regs[index])
+# define SIGINFO_REGISTER(ucontext, index) ((ucontext)->uc_mcontext.uc_regs->gregs[index])
 #elif defined(__sparc__) && defined(__arch64__)
 # define SIGINFO_REGISTER(ucontext, index) ((ucontext)->uc_mcontext.mc_gregs[index])
 #else
