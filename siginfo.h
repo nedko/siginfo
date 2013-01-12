@@ -26,6 +26,6 @@
 #ifdef __cplusplus
 extern "C"
 #endif
-int setup_sigsegv();
+int setup_siginfo(void);
 
 #endif /* #ifndef SIGINFO_H__6CFF6012_DED0_4089_8634_F4515370BD10__INCLUDED */
