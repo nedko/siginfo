@@ -332,7 +332,7 @@ static void dump_siginfo(int signo, siginfo_t * info)
     }
     else
     {
-        siginfo_log("Unknown bad signal %d catched!", signo);
+        siginfo_log("Unknown bad signal %d caught!", signo);
     }
 
 #if defined(USE_UCONTEXT)
